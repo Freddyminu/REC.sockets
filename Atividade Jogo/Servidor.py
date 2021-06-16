@@ -105,7 +105,7 @@ class Server:
         self.start_play()
 
     def start_server(self):
-        port = 12000
+        port = 12002
         self.connection = socket(AF_INET, SOCK_STREAM)
         self.connection.bind(('', port))
 
