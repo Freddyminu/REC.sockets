@@ -2,8 +2,6 @@ from socket import *
 from enum import Enum
 import time
 from NameGenerator import NameGenerator
-
-
 class Messages(Enum):
    START = "START"
 
