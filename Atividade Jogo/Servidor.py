@@ -33,6 +33,7 @@ class Server:
 
     def receive(self):
         result = self.client.recv(1024)
+        print(result)
         if len(result) > 0:
             return result
         else:
@@ -105,7 +106,7 @@ class Server:
         self.start_play()
 
     def start_server(self):
-        port = 12006
+        port = 12003
         self.connection = socket(AF_INET, SOCK_STREAM)
         self.connection.bind(('', port))
 
